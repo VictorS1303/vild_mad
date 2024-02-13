@@ -1,0 +1,38 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+}
+
+body
+{
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--body-background-color);
+}
+
+li
+{
+    list-style: none;
+}
+
+a
+{
+    text-decoration: none;
+}
+
+img,
+video
+{
+    display: block;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+button
+{
+    background-color: transparent;
+}

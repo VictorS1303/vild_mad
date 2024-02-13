@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto: 100, 200, 300, 400, 500, 600, 700, 800, 900');
+
+:root
+{
+    /* Colors */
+    --body-background-color: #f3eede;
+    --primary-text-color: #fff;
+    --secondary-text-color: #1d1d1d;
+
+    --primary-card-background-color: #48481f;
+    --secondary-card-background-color: #d5cbb2;
+    --tertiary-card-background-color: #62622e;
+
+    --tabs-container-background-color: #799175;
+
+
+    /* Radii */
+    --base-border-radius: 10px;
+
+    /* Shadows */
+    --text-shadow: 0 2px 5px rgba(0, 0, 0, .3);
+    --box-shadow: 0 2px 5px rgba(0, 0, 0, .3);
+}
+
+/* Card */
+.card
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 200px;
+    width: 300px;
+    color: var(--primary-text-color);
+    border-radius: var(--base-border-radius);
+    cursor: pointer;
+    transition: box-shadow .15s ease-in;
+}
+
+.card:hover
+{
+    box-shadow: var(--box-shadow);
+    transition: box-shadow .15s ease-in;
+}
+
+/* Disse skal der ikke røres ved igen! */
+.card.primary-card
+{
+    background-color: var(--primary-card-background-color);
+}
+
+.card.secondary-card
+{
+    background-color: var(--secondary-card-background-color);
+}
+
+.card.tertiary-card
+{
+    background-color: var(--tertiary-card-background-color);
+}
