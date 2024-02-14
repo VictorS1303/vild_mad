@@ -76,4 +76,9 @@
         width: 50%;
         transition: width .2s ease-in;
     }
+
+    .footer
+    {
+        grid-template-columns: repeat(4, 1fr);
+    }
 }
