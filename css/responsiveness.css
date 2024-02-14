@@ -1,4 +1,45 @@
 @media screen and (min-width: 768px)
 {
-    
+
+    i.fas.fa-bars,
+    i.fas.fa-times
+    {
+        display: none;
+    }
+
+    nav.main-nav
+    {
+        position: relative;
+        width: 100%;
+        height: 70px;
+        left: 0;
+    }
+
+    nav.main-nav .logo
+    {
+        position: absolute;
+        top: 25%;
+        transform: translateX(-50%);
+        left: 80px;
+        font-size: 30px;
+        color: var(--primary-text-color);
+    }
+
+    nav.main-nav ul
+    {
+        position: absolute;
+        top: 25%;
+        transform: translateX(20%);
+        right: 80px;
+    }
+
+    nav.main-nav ul li
+    {
+        display: inline-block;
+    }
+
+    nav.main-nav ul li:not(:last-child)
+    {
+        margin-right: 20px;
+    }
 }
