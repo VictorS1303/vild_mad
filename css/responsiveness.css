@@ -13,6 +13,8 @@
         width: 100%;
         height: 70px;
         left: 0;
+        background-color: transparent;
+        box-shadow: none;
     }
 
     nav.main-nav .logo
@@ -22,7 +24,6 @@
         transform: translateX(-50%);
         left: 80px;
         font-size: 30px;
-        color: var(--primary-text-color);
     }
 
     nav.main-nav ul
@@ -41,5 +42,38 @@
     nav.main-nav ul li:not(:last-child)
     {
         margin-right: 20px;
+    }
+
+    nav.main-nav ul li a::before
+    {
+        position: absolute;
+        content: '';
+        left: 0;
+        bottom: -2px;
+        height: 2px;
+        width: 0;
+        transform-origin: left;
+        border-bottom: 2px solid var(--secondary-text-color);
+        transition: width .2s ease-in;
+    }
+
+    nav.main-nav ul li a::after
+    {
+        position: absolute;
+        content: '';
+        right: 0;
+        bottom: -2px;
+        height: 2px;
+        width: 0;
+        transform-origin: right;
+        border-bottom: 2px solid var(--secondary-text-color);
+        transition: width .2s ease-in;
+    }
+
+    nav.main-nav ul li a:not(.active):hover::before,
+    nav.main-nav ul li a:not(.active):hover::after
+    {
+        width: 50%;
+        transition: width .2s ease-in;
     }
 }
