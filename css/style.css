@@ -1,8 +1,15 @@
+header .logo
+{
+    margin: 20px 0 0 20px;
+    height: 80px;
+    width: 80px;
+}
+
 i.fas.fa-bars,
 i.fas.fa-times
 {
     position: fixed;
-    top: 20px;
+    top: 45px;
     right: 20px;
     color: var(--secondary-background-color);
     font-size: 25px;
@@ -33,6 +40,7 @@ nav.main-nav
     width: 250px;
     background-color: var(--body-background-color);
     box-shadow: var(--box-shadow);
+    z-index: 3000;
     transition: .4s ease-in;
 }
 
@@ -42,13 +50,7 @@ nav.main-nav.active
 }
 
 nav.main-nav .logo
-{
-    position: absolute;
-    bottom: 30px;
-    left: 50%;
-    transform: translateX(-50%);
-    color: var(--secondary-text-color);
-}
+{}
 
 
 nav.main-nav ul
