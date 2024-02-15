@@ -78,6 +78,19 @@
         transition: width .2s ease-in;
     }
 
+    /* Section: What Can I Do */
+    section.what-can-i-do .container.image-container
+    {
+        flex-direction: row;
+    }
+
+    section.what-can-i-do header.section-header
+    {
+        position: static;
+        transform: translateX(5%);
+    }
+
+
     .footer
     {
         grid-template-columns: repeat(4, 1fr);

@@ -15,9 +15,16 @@ html
 
 body
 {
+    display: flex;
+    flex-direction: column;
     font-family: 'Roboto', sans-serif;
     background-color: var(--body-background-color);
     overflow-x: hidden;
+}
+
+main
+{
+    padding: 20px 40px;
 }
 
 li
@@ -43,4 +50,15 @@ video
 button
 {
     background-color: transparent;
+}
+
+
+section
+{
+    min-height: 40vh;
+}
+
+section:first-child
+{
+    margin-top: 130px;
 }

@@ -61,6 +61,28 @@
     background-color: var(--tertiary-card-background-color);
 }
 
+
+/* Section */
+.section-header
+{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 10px;
+    display: inline-block;
+    border-bottom: 2px solid var(--secondary-text-color);
+    font-weight: bold;
+    text-align: center;
+}
+
+/* section h1
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+} */
+
 /* Footer */
 .footer
 {
@@ -68,9 +90,10 @@
     display: grid;
     grid-template-columns: 1fr;
     text-align: center;
-    position: absolute;
+    position: relative;
     bottom: 0;
     width: 100%;
+    margin-top: auto;
     border-top: 2px solid #333;
     height: 100px;
 }

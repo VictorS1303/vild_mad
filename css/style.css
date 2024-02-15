@@ -78,3 +78,11 @@ nav.main-nav ul li a.active
 {
     border-bottom: 2px solid var(--secondary-text-color);
 }
+
+/* Section: What Can I Do */
+section.what-can-i-do .container.image-container
+{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
