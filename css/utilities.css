@@ -15,6 +15,8 @@
 
     --tabs-container-background-color: #799175;
 
+    --scroll-to-top-btn-background-color: #48481f;
+
 
     /* Radii */
     --base-border-radius: 10px;
@@ -87,14 +89,6 @@
     font-weight: bold;
     text-align: center;
 }
-
-/* section h1
-{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-} */
 
 /* Footer */
 .footer
@@ -181,4 +175,35 @@
 .footer i.fa-brands.fa-facebook-f
 {
     margin-right: 20px;
+}
+
+/* Scroll To Top Button */
+.scroll-to-top-btn
+{
+    position: fixed;
+    bottom: 30px;
+    right: -100px;
+    background-color: var(--scroll-to-top-btn-background-color);
+    height: 50px;
+    width: 50px;
+    border-radius: calc(var(--base-border-radius) * 5);
+    color: var(--primary-text-color);
+    border: 3px solid var(--primary-text-color);
+    font-size: 20px;
+    box-shadow: var(--box-shadow);
+    cursor: pointer;
+    transition: right .4s ease-in;
+}
+
+.scroll-to-top-btn:active
+{
+    transform: scale(.98);
+    box-shadow: none;
+    transition: none;
+}
+
+.scroll-to-top-btn.active
+{
+    right: 30px;
+    transition: right .4s ease-in;
 }
