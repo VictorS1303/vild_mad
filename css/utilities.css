@@ -7,6 +7,7 @@
     --primary-text-color: #fff;
     --secondary-text-color: #1d1d1d;
     --navbar-background-color: #c1beb8;
+    --overlay-background-color: rgba(0, 0, 0, .5);
 
     --primary-card-background-color: #48481f;
     --secondary-card-background-color: #d5cbb2;
@@ -21,6 +22,18 @@
     /* Shadows */
     --text-shadow: 0 2px 5px rgba(0, 0, 0, .3);
     --box-shadow: 0 2px 5px rgba(0, 0, 0, .3);
+}
+
+/* Overlay */
+.overlay
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: var(--overlay-background-color);
+    overflow: hidden;
 }
 
 /* Card */

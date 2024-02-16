@@ -79,6 +79,40 @@ nav.main-nav ul li a.active
     border-bottom: 2px solid var(--secondary-text-color);
 }
 
+/* Section: Plant Hero */
+section.plant-hero
+{
+    margin-bottom: 130px;
+}
+
+section.plant-hero .hero-container
+{
+    position: relative;
+    height: 600px;
+    width: 100%;
+    margin-top: -60px;
+    overflow: hidden;
+}
+
+section.plant-hero .hero-container h1
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 4rem;
+    color: var(--primary-text-color);
+    text-transform: uppercase;
+    letter-spacing: 15px;
+    text-shadow: var(--text-shadow);
+}
+
+section.plant-hero img
+{
+    object-fit: cover;
+}
+
+
 /* Section: What Can I Do */
 section.what-can-i-do .container.image-container
 {
