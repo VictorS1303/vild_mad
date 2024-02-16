@@ -78,6 +78,12 @@
         transition: width .2s ease-in;
     }
 
+    /* Section: Plant Hero */
+    section.plant-hero .hero-container h1
+    {
+        font-size: 8rem;
+    }
+
     /* Section: What Can I Do */
     section.what-can-i-do .container.image-container
     {

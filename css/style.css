@@ -102,7 +102,7 @@ section.plant-hero .hero-container h1
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 4rem;
+    font-size: 2rem;
     color: var(--primary-text-color);
     text-transform: uppercase;
     letter-spacing: 15px;
