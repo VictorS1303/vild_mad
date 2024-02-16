@@ -18,12 +18,12 @@
         box-shadow: none;
     }
 
-    nav.main-nav .logo
+    header .logo
     {
         position: absolute;
-        top: 50%;
-        transform: translateX(-50%);
+        top: 2%;
         left: 80px;
+        transform: translateX(-50%);
         font-size: 30px;
     }
 
