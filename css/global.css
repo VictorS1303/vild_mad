@@ -34,7 +34,7 @@ a
 img,
 video
 {
-    display: block;
+   display: block;
     height: 100%;
     width: 100%;
     object-fit: contain;
@@ -44,3 +44,4 @@ button
 {
     background-color: transparent;
 }
+

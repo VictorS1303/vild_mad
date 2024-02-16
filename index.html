@@ -14,6 +14,7 @@
       crossorigin="anonymous"
     ></script>
     <script src="js/main.js" defer></script>
+    <script src="js/forside.js" defer></script>
     <title>Vild Mad | Home</title>
   </head>
 
@@ -71,46 +72,17 @@
           />
           <div class="text">VILD MAD</div>
         </div>
-
-        <div style="text-align: center">
-          <span class="dot"></span>
-          <span class="dot"></span>
-          <span class="dot"></span>
-        </div>
       </div>
-
-      <script>
-        let slideIndex = 0;
-        showSlides();
-
-        function showSlides() {
-          let i;
-          let slides = document.getElementsByClassName("mySlides");
-          let dots = document.getElementsByClassName("dot");
-          for (i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";
-          }
-          slideIndex++;
-          if (slideIndex > slides.length) {
-            slideIndex = 1;
-          }
-          for (i = 0; i < dots.length; i++) {
-            dots[i].className = dots[i].className.replace(" active", "");
-          }
-          slides[slideIndex - 1].style.display = "block";
-          dots[slideIndex - 1].className += " active";
-          setTimeout(showSlides, 5000); // Change image every 3 seconds
-        }
-      </script>
-
-      <p>
-        Foraging is like a treasure hunt in nature! It's finding yummy wild
-        treats like berries and elderflower. We learn about different flavors
-        and how to be friends with the earth. Foraging is like nature's special
-        grocery store, where we take only what we need and say thank you to the
-        plants. It's a fun way to explore and make sure nature stays happy and
-        healthy!
-      </p>
+      <article>
+        <p class="grid1">
+          Foraging is like a treasure hunt in nature! It's finding yummy wild
+          treats like berries and elderflower. We learn about different flavors
+          and how to be friends with the earth. Foraging is like nature's
+          special grocery store, where we take only what we need and say thank
+          you to the plants. It's a fun way to explore and make sure nature
+          stays happy and healthy!
+        </p>
+      </article>
     </main>
     <footer class="footer" id="footer">
       <div class="developer">
