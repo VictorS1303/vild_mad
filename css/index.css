@@ -17,7 +17,7 @@
     filter: brightness(60%);
     opacity: 50%;
     width: 200%;
-    height: 500px;
+    height: 650px;
     object-fit: cover;
 }
 article{
@@ -25,3 +25,22 @@ article{
   padding: 10%;
 }
 
+.scroll-down-arrow {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: moveUpDown 1.5s infinite;
+}
+
+@keyframes moveUpDown {
+  0% {
+    transform: translate(-50%, 0);
+  }
+  50% {
+    transform: translate(-50%, 10px);
+  }
+  100% {
+    transform: translate(-50%, 0);
+  }
+}
