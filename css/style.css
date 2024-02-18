@@ -114,6 +114,65 @@ section.plant-hero img
     object-fit: cover;
 }
 
+/* Section: Tabs Container */
+section.tabs-section .container.tabs-container
+{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+section.tabs-section .container.tabs-container>div
+{
+    min-height: 300px;
+    width: 100%;
+    text-align: center;
+}
+
+section.tabs-section .container.tabs-container .tab+label
+{
+    padding: 10px 15px;
+    border-radius: calc(var(--base-border-radius) / 2) calc(var(--base-border-radius) / 2) 0 0;
+}
+
+.container.content-container
+{
+    opacity: 0;
+    transition: opacity .2s ease-in;
+    background-color: #333;
+    height: 100%;
+    text-align: center;
+}
+
+.tab+label:hover
+{
+    background-color: #797939;
+}
+
+.tab:checked+label:hover,
+.tab:checked+label
+{
+    border-bottom: 2px solid var(--primary-text-color);
+    color: var(--primary-text-color);
+}
+
+.tab:checked+label+.container.content-container
+{
+    opacity: 1;
+    transition: opacity .2s ease-in;
+}
+
+section.tabs-section .container.tabs-container input[type="radio"]:checked+label
+{
+    background-color: #333;
+}
+
+section.tabs-section .container.tabs-container label
+{
+    font-size: 20px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
 
 /* Section: What Can I Do */
 section.what-can-i-do .container.image-container

@@ -62,3 +62,14 @@ section:first-child
 {
     margin-top: 130px;
 }
+
+input[type="radio"]
+{
+    visibility: hidden;
+}
+
+label,
+input
+{
+    display: block;
+}
