@@ -1,3 +1,4 @@
+
 .slideshow-container {
     position: relative;
     margin: auto;
@@ -20,7 +21,7 @@
 }
 article{
   text-align: center;
-  padding: 15%;  
+  padding: 10%;  
 }
 
 .scroll-down-arrow {
