@@ -92,4 +92,8 @@
     margin-left: 50px;
     font-size: 1.2rem;
   }
+
+  .billede_productlist img {
+    margin-top: 0;
+  }
 }
