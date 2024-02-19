@@ -192,11 +192,3 @@ section.tabs-section .container.tabs-container label
     text-transform: uppercase;
     cursor: pointer;
 }
-
-/* Section: What Can I Do */
-section.what-can-i-do .container.image-container
-{
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
