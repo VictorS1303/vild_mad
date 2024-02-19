@@ -22,11 +22,6 @@ body
     overflow-x: hidden;
 }
 
-main
-{
-    padding: 20px 40px;
-}
-
 li
 {
     list-style: none;
