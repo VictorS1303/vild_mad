@@ -139,9 +139,28 @@ section.tabs-section .container.tabs-container .tab+label
 {
     opacity: 0;
     transition: opacity .2s ease-in;
+    color: var(--primary-text-color);
     background-color: #333;
     height: 100%;
     text-align: center;
+}
+
+.container.content-container ul
+{
+    padding: 50px 20px 0 20px;
+    text-align: left;
+}
+
+.container.content-container ul li
+{
+    margin-top: 20px;
+}
+
+
+.container.content-container ul li img
+{
+    height: 50px;
+    width: 50px;
 }
 
 .tab+label:hover
