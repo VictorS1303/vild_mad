@@ -115,34 +115,34 @@
     {
         grid-template-columns: repeat(2, 1fr);
     }
-}
 
-/****************** Productlist *****************/
+    /****************** Productlist *****************/
 
-.grid_produktliste
-{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    margin-left: 40px;
-    margin-right: 40px;
-    margin-top: 20px;
-    gap: 10px;
-}
+    .grid_produktliste
+    {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin-left: 40px;
+        margin-right: 40px;
+        margin-top: 20px;
+        gap: 10px;
+    }
 
-.dropbtn
-{
-    font-size: 1.5rem;
-    margin-left: 50px;
-    margin-top: 20px;
-}
+    .dropbtn
+    {
+        font-size: 1.5rem;
+        margin-left: 50px;
+        margin-top: 20px;
+    }
 
-.dropdown-content
-{
-    margin-left: 50px;
-    font-size: 1.2rem;
-}
+    .dropdown-content
+    {
+        margin-left: 50px;
+        font-size: 1.2rem;
+    }
 
-.billede_productlist img
-{
-    margin-top: 0;
+    .billede_productlist img
+    {
+        margin-top: 0;
+    }
 }
