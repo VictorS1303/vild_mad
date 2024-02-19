@@ -1,11 +1,11 @@
 const navToggleBtn = document.getElementById('nav_toggle_btn')
 const navBar = document.getElementById('main_nav')
-const scrollToTopBtn = document.getElementById('scroll_to_top_btn')
+
+
 
 
 // EVENT LISTENERS //
-window.addEventListener('scroll', toggleScrollToTopBtn)
-scrollToTopBtn.addEventListener('click', scrollToTop)
+
 navToggleBtn.addEventListener('click', toggleNavBar)
 
 
@@ -36,6 +36,10 @@ function updateIcon()
 }
 
 // Toggle Scroll To Top Button
+const scrollToTopBtn = document.getElementById('scroll_to_top_btn')
+window.addEventListener('scroll', toggleScrollToTopBtn)
+scrollToTopBtn.addEventListener('click', scrollToTop)
+
 function toggleScrollToTopBtn()
 {
     window.scrollY > 300

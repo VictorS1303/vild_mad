@@ -50,4 +50,23 @@ button
 section
 {
     min-height: 40vh;
+<<<<<<< HEAD
+=======
+}
+
+section:first-child
+{
+    margin-top: 130px;
+}
+
+input[type="radio"]
+{
+    visibility: hidden;
+}
+
+label,
+input
+{
+    display: block;
+>>>>>>> tabs_widget
 }
