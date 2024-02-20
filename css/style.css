@@ -1,0 +1,80 @@
+header .logo
+{
+    position: fixed;
+    margin: 20px 0 0 20px;
+    height: 80px;
+    width: 80px;
+}
+
+i.fas.fa-bars,
+i.fas.fa-times
+{
+    position: fixed;
+    top: 45px;
+    right: 20px;
+    color: var(--secondary-background-color);
+    font-size: 25px;
+    cursor: pointer;
+    transition: .4s ease-in;
+}
+
+i.fas.fa-bars.active,
+i.fas.fa-times,
+nav.main-nav.active
+{
+    transition: .4s ease-in;
+}
+
+i.fas.fa-bars.active,
+i.fas.fa-times.active
+{
+    right: 270px;
+}
+
+nav.main-nav
+{
+    font-family: inherit;
+    position: fixed;
+    top: 0;
+    right: -250px;
+    height: 100vh;
+    width: 250px;
+    background-color: var(--body-background-color);
+    box-shadow: var(--box-shadow);
+    z-index: 3000;
+    transition: .4s ease-in;
+}
+
+nav.main-nav.active
+{
+    right: 0;
+}
+
+nav.main-nav .logo
+{}
+
+
+nav.main-nav ul
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.6rem;
+    text-align: center;
+    white-space: nowrap;
+}
+
+nav.main-nav ul li a
+{
+    position: relative;
+    display: inline-block;
+    font-weight: 800;
+    color: var(--secondary-text-color);
+    margin-bottom: 20px;
+}
+
+nav.main-nav ul li a.active
+{
+    border-bottom: 2px solid var(--secondary-text-color);
+}
