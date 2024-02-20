@@ -3,6 +3,7 @@
 .billede_productlist img {
   filter: brightness(40%);
   opacity: 60%;
+  margin-top: 80px;
 }
 
 section.billede_productlist {
@@ -32,6 +33,7 @@ section.billede_productlist {
   place-items: center;
   margin-left: 10px;
   margin-right: 10px;
+  margin-bottom: 10px;
 }
 
 .grid_produktliste a {
@@ -53,11 +55,20 @@ article img {
   align-items: center;
 }
 
-.hej h2 {
+.hej h3 {
   text-align: center;
   font-size: 3vw;
   margin-top: 10px;
   padding-bottom: 10px;
+}
+
+.season_overskrift {
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  font-size: 4.2vw;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
 }
 
 /* Skjuler standard listen */

@@ -1,0 +1,21 @@
+.liste_kategori {
+  display: grid;
+  margin-top: 20px;
+  text-align: center;
+  margin-bottom: 80px;
+  font-size: 2vw;
+}
+
+.liste_kategori a {
+  color: black;
+}
+
+.liste_kategori a:hover {
+  text-decoration: underline;
+}
+
+.overskrift_kategori {
+  margin-top: 80px;
+  text-align: center;
+  font-size: 5vw;
+}
