@@ -121,7 +121,7 @@ section.tabs-section .container.tabs-container
 {
     display: flex;
     justify-content: space-around;
-    width: 90%;
+    width: 100%;
 }
 
 section.tabs-section .container.tabs-container>div
@@ -193,6 +193,7 @@ section.tabs-section .container.tabs-container label
     font-size: 20px;
     text-transform: uppercase;
     cursor: pointer;
+<<<<<<< HEAD
 }
 
 /* ------------------- Categories -------------------*/
@@ -320,4 +321,6 @@ article img
 .dropdown:hover .dropdown-content
 {
     display: block;
+=======
+>>>>>>> tabs_widget
 }
