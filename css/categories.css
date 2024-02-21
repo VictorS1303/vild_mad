@@ -2,20 +2,29 @@
   display: grid;
   margin-top: 20px;
   text-align: center;
-  margin-bottom: 80px;
-  font-size: 2vw;
+  margin-bottom: 100px;
+  font-size: 1.8rem;
 }
 
 .liste_kategori a {
-  color: black;
+  color: #633e23;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 100;
 }
 
 .liste_kategori a:hover {
   text-decoration: underline;
 }
 
+.liste_kategori h2 {
+  font-family: "Montserrat", sans-serif;
+}
+
 .overskrift_kategori {
-  margin-top: 80px;
+  margin-top: 170px;
   text-align: center;
-  font-size: 5vw;
+  font-size: 4rem;
+  color: #633e23;
+  font-family: "Playfair Display", serif;
+  text-transform: uppercase;
 }

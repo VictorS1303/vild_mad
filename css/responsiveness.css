@@ -123,4 +123,20 @@
   .billede_productlist img {
     margin-top: 0;
   }
+
+  .season_overskrift {
+    margin-bottom: 15px;
+    font-size: 3.5vw;
+
+    margin-top: -76px;
+  }
+
+  .ph--arrow-left-bold {
+    width: 5vw;
+    height: 5vw;
+    margin-top: 35px;
+  }
+  .overskrift_kategori {
+    margin-top: 100px;
+  }
 }

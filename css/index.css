@@ -3,17 +3,19 @@
   margin: auto;
 }
 .text {
-  color: #48481f;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  color: #f3eede;
+  /* text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); */
   font-size: 200px;
   position: absolute;
   top: 30%;
-  left: 20%;
+  text-align: center;
   width: 100%;
+  font-family: "Playfair Display", serif;
+  font-weight: 500;
 }
 .mySlides img {
   filter: brightness(60%);
-  opacity: 50%;
+  opacity: 80%;
   width: 200%;
   height: 650px;
   object-fit: cover;
@@ -27,6 +29,7 @@ article {
   position: absolute;
   bottom: 30px;
   left: 50%;
+  color: #633e23;
   transform: translateX(-50%);
   animation: moveUpDown 1.5s infinite;
 }

@@ -15,16 +15,17 @@ section.billede_productlist {
   color: #f3eede;
   transform: translate(-50%, -50%);
   left: 50%;
-  font-size: 2vw;
+  font-size: 2.3vw;
   top: 50%;
+  width: 50ch;
+
   font-family: "Montserrat", sans-serif;
 }
 
 .overskrift_ingredients {
   text-align: center;
-  font-family: "Prompt", sans-serif;
+  font-family: "Playfair Display", serif;
   font-size: 5vw;
-  width: 20ch;
 }
 
 .grid_produktliste {
@@ -56,6 +57,8 @@ article img {
 }
 
 .hej h3 {
+  font-family: "Montserrat", sans-serif;
+
   text-align: center;
   font-size: 3vw;
   margin-top: 10px;
@@ -64,46 +67,24 @@ article img {
 
 .season_overskrift {
   text-align: center;
-  margin-top: 15px;
-  margin-bottom: 5px;
-  font-size: 4.2vw;
-  font-family: "Montserrat", sans-serif;
+  margin-bottom: 15px;
+  font-size: 3.8vw;
+  font-family: "Playfair Display", serif;
   text-transform: uppercase;
+  margin-top: -33px;
+  color: #633e23;
 }
 
-/* Skjuler standard listen */
-
-.dropbtn {
-  font-size: 1rem;
-  margin-left: 20px;
-  margin-top: 10px;
-}
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
-  margin-left: 20px;
-  border-radius: 10px;
-}
-
-/* Stil for hver dropdown-item */
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
-
-/* Skift farve på element, når der holdes musen over det */
-.dropdown-content a:hover {
-  background-color: #ddd;
-  border-radius: 10px;
-}
-
-/* Vis dropdown-menu, når knappen holdes nede */
-.dropdown:hover .dropdown-content {
-  display: block;
+.ph--arrow-left-bold {
+  display: inline-block;
+  width: 7vw;
+  height: 7vw;
+  --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 256 256'%3E%3Cpath fill='%23000' d='M228 128a12 12 0 0 1-12 12H69l51.52 51.51a12 12 0 0 1-17 17l-72-72a12 12 0 0 1 0-17l72-72a12 12 0 0 1 17 17L69 116h147a12 12 0 0 1 12 12'/%3E%3C/svg%3E");
+  background-color: #633e23;
+  -webkit-mask-image: var(--svg);
+  mask-image: var(--svg);
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+  margin-top: 20px;
+  margin-left: 42px;
 }

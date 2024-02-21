@@ -4,9 +4,11 @@
 const urlParams = new URLSearchParams(window.location.search);
 const mySeason = urlParams.get("season");
 
-document.querySelector(".season_overskrift").textContent = mySeason;
+document.querySelector(".season_overskrift").textContent = "All";
 
 if (mySeason) {
+  document.querySelector(".season_overskrift").textContent = mySeason;
+
   fetch(`https://lxnfykqvjokljzdduzaq.supabase.co/rest/v1/vild_mad?season=eq.${mySeason}`, {
     method: "GET",
     headers: {
@@ -21,6 +23,8 @@ if (mySeason) {
     items.forEach(showItem);
   }
 } else {
+  document.querySelector(".season_overskrift").textContent = "All seasons";
+
   fetch(`https://lxnfykqvjokljzdduzaq.supabase.co/rest/v1/vild_mad?limit=22`, {
     method: "GET",
     headers: {
