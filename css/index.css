@@ -4,8 +4,7 @@
 }
 .text {
   color: #f3eede;
-  /* text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); */
-  font-size: 200px;
+  font-size: 17vw;
   position: absolute;
   top: 30%;
   text-align: center;
@@ -58,13 +57,17 @@ article {
   margin-bottom: 10px;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
+  .slideshow-container {
+    position: relative;
+    margin-top: 100px;
+  }
   .text {
     font-size: 150px;
   }
 
   .scroll-down-arrow {
-    display: block;
+    display: none;
   }
 
   .grid3 {
@@ -74,19 +77,18 @@ article {
   .grid3 {
     overflow: hidden;
     width: 100vw;
-    height: 100vh;
     gap: 10px;
   }
 
   .billederulle {
     display: flex;
     white-space: break-spaces;
-    animation: scrollGallery 10s linear infinite;
+    animation: scrollGallery 9s linear infinite;
   }
 
   .grid3 img {
     width: 100vw;
-    height: 35vh;
+    height: auto;
     object-fit: cover;
   }
 
@@ -95,7 +97,7 @@ article {
       transform: translateX(0);
     }
     100% {
-      transform: translateX(-100%);
+      transform: translateX(-230%);
     }
   }
 }
