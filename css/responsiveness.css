@@ -1,148 +1,142 @@
-@media screen and (min-width: 768px)
-{
+@media screen and (min-width: 768px) {
+  i.fas.fa-bars,
+  i.fas.fa-times {
+    display: none;
+  }
 
-    i.fas.fa-bars,
-    i.fas.fa-times
-    {
-        display: none;
-    }
+  nav.main-nav {
+    position: relative;
+    width: 100%;
+    height: 70px;
+    left: 0;
+    background-color: transparent;
+    border-bottom: 2px solid #333;
+    box-shadow: none;
+  }
 
-    nav.main-nav
-    {
-        position: relative;
-        width: 100%;
-        height: 70px;
-        left: 0;
-        background-color: transparent;
-        border-bottom: 2px solid #333;
-        box-shadow: none;
-    }
+  nav.main-nav .logo {
+    position: absolute;
+    top: 50%;
+    transform: translateX(-50%);
+    left: 80px;
+    font-size: 30px;
+  }
 
-    nav.main-nav .logo
-    {
-        position: absolute;
-        top: 50%;
-        transform: translateX(-50%);
-        left: 80px;
-        font-size: 30px;
-    }
+  header .logo {
+    position: absolute;
+    top: 2%;
+    left: 80px;
+    transform: translateX(-50%);
+    font-size: 30px;
+  }
+  nav.main-nav ul {
+    position: absolute;
+    top: 25%;
+    transform: translateX(20%);
+    right: 80px;
+  }
 
-    header .logo
-    {
-        position: absolute;
-        top: 2%;
-        left: 80px;
-        transform: translateX(-50%);
-        font-size: 30px;
-    }
+  nav.main-nav ul li {
+    display: inline-block;
+  }
 
-    nav.main-nav ul
-    {
-        position: absolute;
-        top: 25%;
-        transform: translateX(20%);
-        right: 80px;
-    }
+  nav.main-nav ul li:not(:last-child) {
+    margin-right: 20px;
+  }
 
-    nav.main-nav ul li
-    {
-        display: inline-block;
-    }
+  nav.main-nav ul li a::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: -2px;
+    height: 2px;
+    width: 0;
+    transform-origin: left;
+    border-bottom: 2px solid var(--secondary-text-color);
+    transition: width 0.2s ease-in;
+  }
 
-    nav.main-nav ul li:not(:last-child)
-    {
-        margin-right: 20px;
-    }
+  nav.main-nav ul li a::after {
+    position: absolute;
+    content: "";
+    right: 0;
+    bottom: -2px;
+    height: 2px;
+    width: 0;
+    transform-origin: right;
+    border-bottom: 2px solid var(--secondary-text-color);
+    transition: width 0.2s ease-in;
+  }
 
-    nav.main-nav ul li a::before
-    {
-        position: absolute;
-        content: "";
-        left: 0;
-        bottom: -2px;
-        height: 2px;
-        width: 0;
-        transform-origin: left;
-        border-bottom: 2px solid var(--secondary-text-color);
-        transition: width 0.2s ease-in;
-    }
+  nav.main-nav ul li a:not(.active):hover::before,
+  nav.main-nav ul li a:not(.active):hover::after {
+    width: 50%;
+    transition: width 0.2s ease-in;
+  }
 
-    nav.main-nav ul li a::after
-    {
-        position: absolute;
-        content: "";
-        right: 0;
-        bottom: -2px;
-        height: 2px;
-        width: 0;
-        transform-origin: right;
-        border-bottom: 2px solid var(--secondary-text-color);
-        transition: width 0.2s ease-in;
-    }
+  .footer {
+    grid-template-columns: repeat(4, 1fr);
+  }
 
-    nav.main-nav ul li a:not(.active):hover::before,
-    nav.main-nav ul li a:not(.active):hover::after
-    {
-        width: 50%;
-        transition: width 0.2s ease-in;
-    }
+  /* Section: Plant Hero */
+  section.plant-hero .hero-container h1 {
+    font-size: 8rem;
+  }
 
-    .footer
-    {
-        grid-template-columns: repeat(4, 1fr);
-    }
+  /* Section: What Can I Do */
+  section.what-can-i-do .container.image-container {
+    flex-direction: row;
+  }
 
-    /* Section: Plant Hero */
-    section.plant-hero .hero-container h1
-    {
-        font-size: 8rem;
-    }
+  section.what-can-i-do header.section-header {
+    position: static;
+    transform: translateX(5%);
+  }
 
-    /* Section: What Can I Do */
-    section.what-can-i-do .container.image-container
-    {
-        flex-direction: row;
-    }
+  .footer {
+    grid-template-columns: repeat(2, 1fr);
+  }
 
-    section.what-can-i-do header.section-header
-    {
-        position: static;
-        transform: translateX(5%);
-    }
+  /****************** Productlist *****************/
 
+  .grid_produktliste {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 20px;
+    gap: 10px;
+    margin-bottom: 30px;
+  }
 
-    .footer
-    {
-        grid-template-columns: repeat(2, 1fr);
-    }
+  .dropbtn {
+    font-size: 1.5rem;
+    margin-left: 50px;
+    margin-top: 20px;
+  }
 
-    /****************** Productlist *****************/
+  .dropdown-content {
+    margin-left: 50px;
+    font-size: 1.2rem;
+  }
 
-    .grid_produktliste
-    {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        margin-left: 40px;
-        margin-right: 40px;
-        margin-top: 20px;
-        gap: 10px;
-    }
+  .billede_productlist img {
+    margin-top: 0;
+  }
 
-    .dropbtn
-    {
-        font-size: 1.5rem;
-        margin-left: 50px;
-        margin-top: 20px;
-    }
+  .season_overskrift {
+    margin-bottom: 15px;
+    font-size: 3.5vw;
 
-    .dropdown-content
-    {
-        margin-left: 50px;
-        font-size: 1.2rem;
-    }
+    margin-top: -76px;
+  }
 
-    .billede_productlist img
-    {
-        margin-top: 0;
-    }
+  .ph--arrow-left-bold {
+    width: 5vw;
+    height: 5vw;
+    margin-top: 35px;
+  }
+  .overskrift_kategori {
+    margin-top: 100px;
+  }
 }
