@@ -10,7 +10,7 @@
     height: 70px;
     left: 0;
     background-color: transparent;
-    border-bottom: 2px solid #333;
+    border-bottom: 2px solid #633e23;
     box-shadow: none;
   }
 
@@ -138,5 +138,82 @@
   }
   .overskrift_kategori {
     margin-top: 100px;
+  }
+
+  path {
+    color: #633e23;
+  }
+
+  /************** About *************/
+
+  .overskrift_about {
+    text-align: center;
+    font-size: 4rem;
+    font-family: "Playfair Display", serif;
+    text-transform: uppercase;
+    margin-top: 30px;
+    color: #633e23;
+  }
+
+  .grid2_1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .grid2_1 h2 {
+    padding-bottom: 10px;
+    padding-top: 15px;
+    text-align: center;
+    font-family: "Playfair Display", serif;
+  }
+
+  .grid2_1 p {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 20px;
+    font-family: "Montserrat", sans-serif;
+    line-height: 1.5;
+  }
+
+  .about_tekst {
+    display: flex;
+    flex-direction: column;
+    background-color: #b29b7f;
+    color: #fff;
+    border-radius: 10px;
+    align-items: center;
+    margin: 30px;
+    padding-bottom: 15px;
+  }
+
+  .contact h2 {
+    text-align: center;
+    font-family: "Playfair Display", serif;
+  }
+
+  .contact {
+    display: flex;
+    flex-direction: column;
+    background-color: #b29b7f;
+    color: #fff;
+    border-radius: 10px;
+    align-items: center;
+    margin: 30px;
+    padding-bottom: 15px;
+    line-height: 1.5;
+    font-family: "Montserrat", sans-serif;
+  }
+
+  .form1 h2 {
+    text-align: center;
+    font-size: 3rem;
+    font-family: "Playfair Display", serif;
+    text-transform: uppercase;
+    margin-top: 30px;
+    color: #633e23;
+  }
+
+  .form1 {
+    margin-bottom: 50px;
   }
 }

@@ -6,7 +6,7 @@
   color: #f3eede;
   font-size: 17vw;
   position: absolute;
-  top: 30%;
+  top: 17%;
   text-align: center;
   width: 100%;
   font-family: "Playfair Display", serif;
@@ -21,7 +21,7 @@
 }
 article {
   text-align: center;
-  padding: 10%;
+  padding: 5%;
 }
 
 .scroll-down-arrow {
@@ -48,13 +48,22 @@ article {
 .billederulle {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 10px;
 }
 .grid3 img {
   width: 100%;
   height: auto;
-  border-radius: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
+  aspect-ratio: 16/9;
+  gap: 10px;
+}
+
+.grid1 {
+  font-family: "Montserrat", sans-serif;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  text-align: left;
+  color: #633e23;
+  font-size: 1.3rem;
 }
 
 @media only screen and (max-width: 768px) {
@@ -83,13 +92,19 @@ article {
   .billederulle {
     display: flex;
     white-space: break-spaces;
-    animation: scrollGallery 9s linear infinite;
+    animation: scrollGallery 20s linear infinite;
   }
 
   .grid3 img {
     width: 100vw;
     height: auto;
     object-fit: cover;
+  }
+  .grid1 {
+    font-family: "Montserrat", sans-serif;
+    margin-top: 0px;
+    text-align: left;
+    color: #633e23;
   }
 
   @keyframes scrollGallery {

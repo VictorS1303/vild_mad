@@ -12,7 +12,7 @@ i.fas.fa-times {
   position: absolute;
   top: 45px;
   right: 20px;
-  color: var(--secondary-background-color);
+  color: #633e23;
   font-size: 25px;
   cursor: pointer;
   transition: 0.4s ease-in;
@@ -40,6 +40,7 @@ nav.main-nav {
   box-shadow: var(--box-shadow);
   z-index: 3000;
   transition: 0.4s ease-in;
+  color: #633e23;
 }
 
 nav.main-nav.active {
@@ -60,12 +61,13 @@ nav.main-nav ul li a {
   position: relative;
   display: inline-block;
   font-weight: 800;
-  color: var(--secondary-text-color);
+  color: #633e23;
+
   margin-bottom: 20px;
 }
 
 nav.main-nav ul li a.active {
-  border-bottom: 2px solid var(--secondary-text-color);
+  border-bottom: 2px solid #633e23;
 }
 
 /* Section: Plant Hero */

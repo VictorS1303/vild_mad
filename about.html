@@ -1,101 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/global.css" />
     <link rel="stylesheet" href="css/utilities.css" />
-    <link rel="stylesheet" href="css/responsiveness.css" />
     <link rel="stylesheet" href="css/about.css" />
-    <link rel="icon" type="image/x-icon" href="images/favicon/favicon.png" />
-    <script
-      src="https://kit.fontawesome.com/e05f21b32e.js"
-      crossorigin="anonymous"
-    ></script>
-    <script src="js/main.js" defer></script>
-    <title>Vild Mad | About Us</title>
-  </head>
+    <link rel="stylesheet" href="css/responsiveness.css" />
 
-  <body>
+    <link rel="icon" type="image/x-icon" href="images/favicon/favicon.png" />
+    <script src="https://kit.fontawesome.com/e05f21b32e.js" crossorigin="anonymous"></script>
+    <script src="js/main.js" defer></script>
+    <script src="js/about.js"></script>
+    <title>Vild Mad | About Us</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+    </style>
+
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&display=swap');
+    </style>
+</head>
+
+<body>
     <header>
-      <i class="fas fa-bars btn nav-toggle-btn" id="nav_toggle_btn"></i>
-      <a href="#top">
-        <img
-          src="images/logos/vild_mad_logo.webp"
-          class="logo"
-          alt="vild mad logo"
-        />
-      </a>
+        <i class="fas fa-bars btn nav-toggle-btn" id="nav_toggle_btn"></i>
+        <a href="#top">
+            <img src="images/logos/vild_mad_logo.webp" class="logo" alt="vild mad logo" />
+        </a>
     </header>
 
     <nav class="main-nav" id="main_nav">
-      <ul>
-        <li>
-          <a href="index.html">Home</a>
-        </li>
-        <li>
-          <a href="category.html">Seasons</a>
-        </li>
-        <li>
-          <a href="about.html" class="active">About</a>
-        </li>
-      </ul>
+        <ul>
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+            <li>
+                <a href="category.html">Seasons</a>
+            </li>
+            <li>
+                <a href="about.html" class="active">About</a>
+            </li>
+        </ul>
     </nav>
     <main>
-      <section class="grid2_1">
-        <div>
-          <h1>About us</h1>
-          <br />
-          <p>
-            MAD inspires and empowers the global hospitality industry to create
-            sustainable change and transform food systems for the future. From
-            young apprentices to emerging leaders and luminaries in the field,
-            we’re equipping individuals with the knowledge and skills to make a
-            difference in their communities and the world.
-          </p>
-        </div>
-        <div>
-          <img class="kortImg" src="images/kort.webp" alt="" />
-        </div>
-      </section>
 
-      <br />
-      <section class="contact">
-        <div class="overskriftCenter">
-          <h2>Contact</h2>
+        <h1 class="overskrift_about">ABOUT US</h1>
+        <section class="grid2_1">
+            <div class="about_tekst">
+                <h2>Our vision</h2>
+
+                <p>
+                    MAD inspires and empowers the global hospitality industry to create
+                    sustainable change and transform food systems for the future. From
+                    young apprentices to emerging leaders and luminaries in the field,
+                    we’re equipping individuals with the knowledge and skills to make a
+                    difference in their communities and the world.
+                </p>
+            </div>
+
+            <div class="contact">
+                <h2>Contact</h2>
+
+
+                <ul>
+                    <li>Mikkel-Lau Mikkelsen Projektleder</li>
+                    <li>+45 26 35 00 17</li>
+                    <li>mm@madfeed.co</li>
+                    <li>Instagram: @vildmaddk</li>
+                    <li>Facebook: Vild Mad</li>
+                </ul>
+
+            </div>
+
+        </section>
+
+        <div class="form1">
+            <h2>Tell us what you've found!</h2>
+
+            <form action="/process-form" method="post">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required />
+
+                <br />
+
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" required />
+
+                <br />
+
+                <label for="message">What did you find?</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <br />
+
+                <label for="message">Where did you find it?</label>
+                <textarea id="message1" name="message" rows="4" required></textarea>
+
+                <br />
+
+                <label for="file">Attach photo</label>
+                <input type="file" id="file" name="file" accept=".pdf, .doc, .docx" />
+
+                <br />
+
+                <div id="dropBox" ondrop="handleDrop(event)" ondragover="allowDrop(event)">
+                    <p id="dragText">
+                        Drop your photo here!
+                    </p>
+                    <input type="file" id="fileInput" name="file" accept=".pdf, .doc, .docx"
+                        onchange="handleFiles(this.files)" />
+                </div>
+
+                <button type="submit">Send</button>
+            </form>
         </div>
 
-        <ul>
-          <li>Mikkel-Lau Mikkelsen Projektleder</li>
-          <li>MAD +45 26 35 00 17</li>
-          <li>mm@madfeed.co</li>
-          <li>Instagram: @vildmaddk</li>
-          <li>Facebook: Vild Mad</li>
-        </ul>
-      </section>
+
+
+
     </main>
 
     <button class="btn scroll-to-top-btn" id="scroll_to_top_btn">
-      <i class="fas fa-arrow-up"></i>
+        <i class="fas fa-arrow-up"></i>
     </button>
 
     <footer class="footer" id="footer">
-      <div class="links">
-        <h4>Links:</h4>
-        <a href="https://vildmad.dk/dk/presse">Press &amp; Newsletter</a>
-      </div>
-      <div class="socials">
-        <h4>Socials:</h4>
-        <div>
-          <a href="https://www.facebook.com/vildmaddk" target="_blank">
-            <i class="fa-brands fa-facebook-f fa-2x"></i>
-          </a>
-          <a href="https://www.instagram.com/vildmaddk/" target="_blank">
-            <i class="fa-brands fa-instagram fa-2x"></i>
-          </a>
+        <div class="links">
+            <h4>Links:</h4>
+            <a href="https://vildmad.dk/dk/presse">Press &amp; Newsletter</a>
         </div>
-      </div>
+        <div class="socials">
+            <h4>Socials:</h4>
+            <div>
+                <a href="https://www.facebook.com/vildmaddk" target="_blank">
+                    <i class="fa-brands fa-facebook-f fa-2x"></i>
+                </a>
+                <a href="https://www.instagram.com/vildmaddk/" target="_blank">
+                    <i class="fa-brands fa-instagram fa-2x"></i>
+                </a>
+            </div>
+        </div>
     </footer>
-  </body>
+</body>
+
 </html>

@@ -1,8 +1,49 @@
+.overskrift_about {
+  text-align: center;
+  font-size: 3rem;
+  font-family: "Playfair Display", serif;
+  text-transform: uppercase;
+  margin-top: 80px;
+  color: #633e23;
+}
+
 .grid2_1 {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  margin-top: 50px;
-  padding: 30px;
+  margin-top: 10px;
+}
+
+.grid2_1 h2 {
+  padding-bottom: 10px;
+  padding-top: 15px;
+  width: 10ch;
+  text-align: center;
+  font-family: "Playfair Display", serif;
+  font-size: 2rem;
+}
+
+.grid2_1 p {
+  padding-left: 30px;
+
+  padding-right: 30px;
+  padding-bottom: 20px;
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.5;
+}
+
+.about_tekst {
+  display: flex;
+  flex-direction: column;
+  background-color: #b29b7f;
+  color: #fff;
+  border-radius: 10px;
+  align-items: center;
+  margin: 30px;
+  padding-bottom: 15px;
+}
+
+.contact h2 {
+  text-align: center;
+  font-family: "Playfair Display", serif;
+  margin-top: -5px;
 }
 
 .contact {
@@ -13,7 +54,9 @@
   border-radius: 10px;
   align-items: center;
   margin: 30px;
-  padding-bottom: 15px;
+  padding-bottom: 35px;
+  line-height: 1.5;
+  font-family: "Montserrat", sans-serif;
 }
 
 .kortImg {
@@ -27,12 +70,98 @@
   margin-bottom: 20px;
   background-color: #b29b7f;
   border-radius: 10px;
-  padding-left: 10px;
-  padding-right: 10px;
+
   padding-bottom: 10px;
 }
 
-h1,
-h2 {
-  font-size: 40px;
+form {
+  max-width: 400px;
+  margin: 20px auto;
+  background-color: #799175;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  color: #f3eede;
+  font-family: "Montserrat", sans-serif;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 16px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+#dropBox {
+  width: 100%;
+  height: 150px;
+  border: 2px dashed #60755c;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 16px;
+  background-color: #f3eede;
+  transition: border-color 0.3s;
+  cursor: pointer;
+}
+
+#dragText {
+  color: #888;
+  font-size: 16px;
+}
+
+input[type="file"] {
+  display: none;
+}
+
+button {
+  background-color: #60755c;
+  color: #f3eede;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-family: "Montserrat", sans-serif;
+}
+
+button:hover {
+  background-color: #404f3d;
+}
+
+.form1 h2 {
+  text-align: center;
+  font-size: 2rem;
+  font-family: "Playfair Display", serif;
+  text-transform: uppercase;
+  margin-top: 30px;
+
+  color: #633e23;
+}
+
+/* Animation */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+#dropBox:hover {
+  border-color: #404f3d;
+  animation: pulse 1s infinite;
 }
