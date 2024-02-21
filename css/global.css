@@ -1,4 +1,5 @@
-* {
+*
+{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -7,11 +8,13 @@
   user-select: none;
 }
 
-html {
+html
+{
   scroll-behavior: smooth;
 }
 
-body {
+body
+{
   display: flex;
   flex-direction: column;
   font-family: "Roboto", sans-serif;
@@ -19,23 +22,32 @@ body {
   overflow-x: hidden;
 }
 
-li {
+li
+{
   list-style: none;
 }
 
-a {
+a
+{
   display: inline-block;
   text-decoration: none;
 }
 
 img,
-video {
+video
+{
   display: block;
   height: 100%;
   width: 100%;
   object-fit: contain;
 }
 
-button {
+button
+{
   background-color: transparent;
+}
+
+input[type="radio"]
+{
+  visibility: hidden;
 }
