@@ -13,6 +13,7 @@
     <script src="https://kit.fontawesome.com/e05f21b32e.js" crossorigin="anonymous"></script>
     <script src="js/main.js" defer></script>
     <script src="js/shrubs_trees.js" defer></script>
+    <script src="js/generate_plant_cards.js" defer></script>
     <title>Vild Mad | Bushes &amp; Trees</title>
 
     <style>
@@ -89,22 +90,18 @@
         <h2 class="season_overskrift">Overskrift</h2>
 
         <template id="itemTemplate">
-            <article>
+            <article class="plant-card">
 
                 <a href="plant.html" class="overlay_produktliste">
 
                     <div class="hej">
-                        <img src="images/fuglegraes.jpg" alt="">
+                        <img src="images/fuglegraes.jpg" class="inner-article-image" alt="">
                         <header>
                             <h3>Brombær</h3>
                         </header>
                     </div>
                 </a>
-
-
-
             </article>
-
         </template>
 
         <div class="grid_produktliste">
