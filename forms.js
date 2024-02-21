@@ -20,4 +20,6 @@ function handleFiles(files) {
     if (files.length > 0) {
         dragText.innerHTML = "<span>x</span>" +files[0].name;
     } else {
-        dragText.innerHTML = 'Træk og slip en fil her eller klik for at 
+        dragText.innerHTML = 'Træk og slip en fil her eller klik for at vælge en fil.';
+    }
+}
