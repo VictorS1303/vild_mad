@@ -34,41 +34,42 @@ if (mySeason) {
     .then((res) => res.json())
     .then(showData);
 
-function showData(items) {
-  console.log(items);
-  items.forEach(showItem);
-  selectAllArticles();
-}
+  function showData(items) {
+    console.log(items);
+    items.forEach(showItem);
+    selectAllArticles();
+  }
 
-function showItem(item) {
-  const template = document.querySelector("#itemTemplate").content;
+  function showItem(item) {
+    const template = document.querySelector("#itemTemplate").content;
 
-  //make copy
+    //make copy
 
-  const copy = template.cloneNode(true);
+    const copy = template.cloneNode(true);
 
-  //change input
+    //change input
 
-  copy.querySelector("img").src = item.image;
+    copy.querySelector("img").src = item.image;
 
-  copy.querySelector("h3").textContent = item.title;
-  copy.querySelector("a").href = `plant.html/${item.id}`;
+    copy.querySelector("h3").textContent = item.title;
+    copy.querySelector("a").href = `plant.html/${item.id}`;
 
-  //append
+    //append
 
-  document.querySelector("main .grid_produktliste").appendChild(copy);
-}
+    document.querySelector("main .grid_produktliste").appendChild(copy);
+  }
 
-function selectAllArticles() {
-  const plantCards = document.querySelectorAll(".plant-card");
-  console.log("plantCards er", plantCards);
-  plantCards.forEach(generateRandomBackgroundColor);
-}
+  function selectAllArticles() {
+    const plantCards = document.querySelectorAll(".plant-card");
+    console.log("plantCards er", plantCards);
+    plantCards.forEach(generateRandomBackgroundColor);
+  }
 
-function generateRandomBackgroundColor(card) {
-  const colors = ["#48481F", "#D5CBB2", "#62622E", "#B29B7F", "#797939", "#98623A", "#633E23"];
-  const randomIndex = Math.floor(Math.random() * colors.length); // Genererer tilfeldig indeks
-  const randomColor = colors[randomIndex]; // Henter fargen med den tilfeldige indeksen
-  console.log("farven er ", randomColor); // Skriver ut fargen
-  card.style.backgroundColor = randomColor; // Setter bakgrunnsfargen til kortet
+  function generateRandomBackgroundColor(card) {
+    const colors = ["#48481F", "#D5CBB2", "#62622E", "#B29B7F", "#797939", "#98623A", "#633E23"];
+    const randomIndex = Math.floor(Math.random() * colors.length); // Genererer tilfeldig indeks
+    const randomColor = colors[randomIndex]; // Henter fargen med den tilfeldige indeksen
+    console.log("farven er ", randomColor); // Skriver ut fargen
+    card.style.backgroundColor = randomColor; // Setter bakgrunnsfargen til kortet
+  }
 }
