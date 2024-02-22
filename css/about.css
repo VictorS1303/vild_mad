@@ -117,6 +117,7 @@ textarea {
 #dragText {
   color: #888;
   font-size: 16px;
+  font-family: "Montserrat", sans-serif;
 }
 
 input[type="file"] {
@@ -164,4 +165,8 @@ button:hover {
 #dropBox:hover {
   border-color: #404f3d;
   animation: pulse 1s infinite;
+}
+
+::placeholder {
+  font-family: "Montserrat", sans-serif;
 }

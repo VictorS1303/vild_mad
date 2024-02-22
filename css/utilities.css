@@ -91,6 +91,7 @@
   border-top: 2px solid #633e23;
   height: 100px;
   color: #633e23;
+  font-family: "Montserrat", sans-serif;
 }
 
 .footer div {
@@ -112,6 +113,7 @@
 
 .footer a {
   color: #633e23;
+  font-family: "Montserrat", sans-serif;
 }
 
 .footer .developer {

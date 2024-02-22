@@ -95,7 +95,7 @@ section.plant-hero .hero-container h1 {
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 2rem;
-  color: var(--primary-text-color);
+  color: #633e23;
   text-transform: uppercase;
   letter-spacing: 15px;
   text-shadow: var(--text-shadow);
