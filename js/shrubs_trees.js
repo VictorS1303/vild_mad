@@ -53,7 +53,7 @@ function showItem(item) {
   copy.querySelector("img").src = item.image;
 
   copy.querySelector("h3").textContent = item.title;
-  copy.querySelector("a").href = `plant.html/${item.id}`;
+  copy.querySelector("a").href = `plant.html?id=${item.id}`;
 
   //append
 
